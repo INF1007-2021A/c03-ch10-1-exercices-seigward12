@@ -6,11 +6,11 @@ test_linear_values (__main__.TestExercice) ... ERROR
 ERROR: test_coordinates (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\alexi\OneDrive\Documents\GitHub\c03-ch10-1-exercices-seigward12\test_exercice.py", line 26, in test_coordinates
+  File "test_exercice.py", line 26, in test_coordinates
     output = exercice.coordinate_conversion(cartesian_coordinates)
-  File "c:\Users\alexi\OneDrive\Documents\GitHub\c03-ch10-1-exercices-seigward12\exercice.py", line 17, in coordinate_conversion
+  File "/home/runner/work/c03-ch10-1-exercices-seigward12/c03-ch10-1-exercices-seigward12/exercice.py", line 17, in coordinate_conversion
     return np.array([(np.sqrt(i[0]**2 + i[1]**2), np.arctan2(i[1]/i[0])) for i in cartesian_coordinates])
-  File "c:\Users\alexi\OneDrive\Documents\GitHub\c03-ch10-1-exercices-seigward12\exercice.py", line 17, in <listcomp>
+  File "/home/runner/work/c03-ch10-1-exercices-seigward12/c03-ch10-1-exercices-seigward12/exercice.py", line 17, in <listcomp>
     return np.array([(np.sqrt(i[0]**2 + i[1]**2), np.arctan2(i[1]/i[0])) for i in cartesian_coordinates])
 TypeError: arctan2() takes from 2 to 3 positional arguments but 1 were given
 
@@ -18,11 +18,11 @@ TypeError: arctan2() takes from 2 to 3 positional arguments but 1 were given
 ERROR: test_linear_values (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\alexi\OneDrive\Documents\GitHub\c03-ch10-1-exercices-seigward12\test_exercice.py", line 15, in test_linear_values
+  File "test_exercice.py", line 15, in test_linear_values
     output = list(exercice.linear_values())
 AttributeError: module 'exercice' has no attribute 'linear_values'
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.016s
+Ran 3 tests in 0.001s
 
 FAILED (errors=2)
